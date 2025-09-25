@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing dependencies...
+      - npm ci
+  build:
+    commands:
+      - echo Building project...
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed. Preparing artifacts...
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: out   
