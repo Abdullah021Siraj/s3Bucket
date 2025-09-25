@@ -39,7 +39,7 @@ const HeroSection = () => (
         <CloudIcon className="w-10 h-10 text-teal-500" />
       </div>
       <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-        Amazon S3 (Testing)
+        Amazon S3
       </h1>
       <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-10">
         Simple Storage Service — Store and retrieve any amount of data, from anywhere.
