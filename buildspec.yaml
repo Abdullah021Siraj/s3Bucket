@@ -11,6 +11,8 @@ phases:
     commands:
       - echo Building project...
       - npm run build
+      - echo "Listing out/ contents..."
+      - ls -R out/
   post_build:
     commands:
       - echo "Deploying to S3..."
