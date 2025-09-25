@@ -13,9 +13,5 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo Build completed. Preparing artifacts...
-
-artifacts:
-  files:
-    - '**/*'
-  base-directory: out   
+      - echo "Deploying to S3..."
+      - aws s3 sync out/ s3://staticwebsitebucket-21303  --delete
